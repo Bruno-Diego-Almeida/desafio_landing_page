@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Linx</title>
+
+</head>
+<body>
+    <header class="header">
+        <div class="fundo"></div>
+        <div class="titulo">
+            <h3>uma seleção de produtos</h3>
+            <h1>especial para você</h1>
+            <p>Todos os produtos desta lista foram selecionados a partir da sua navegação. Aproveite!</p>
+        </div>
+
+        <div class="botoes">
+            <button><a href="#">Conheça a Linx</a></button>
+            <button><a href="#">Ajude o algorítimo</a></button>
+            <button><a href="#">Seus produtos</a></button>
+            <button><a href="#">Compartilhe</a></button>
+
+        </div>
+
+    </header>
+
+    <div class="container">
+        <div class="formulario">
+            <div class="texto">
+                <h2>Ajude o algorítimo a ser mais certeiro</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam est, totam aliquid quod similique error, sequi eveniet vitae modi, nam ipsam deleniti? Quis culpa voluptas dolore delectus dicta fuga mollitia.
+                </p>
+                     
+                <p>
+                    Morbi eu condimentum urna. Curabitur eu magna eget turpis condimentum ultrices. Suspendisse quis lorem ultricies, pulvinar purus sed, egestas erat. Etiam ultricies a ante vehicula pharetra. Quisque ut neque mattis, consequat velit ut, ultrices orci. Nulla varius elementum erat vel pharetra. Aenean sit amet nisi diam. Morbi viverra, magna ac luctus commodo, odio ante suscipit libero, at mattis augue est vel metus.
+                </p>
+                        
+            </div>
+              
+            <div class="entrada">
+
+                <form class="formulario_Inicial">
+                    <div class="dados_Pessoais">
+                        <label>Seu nome:</label>
+                        <input type="text" name="nome">
+
+                        <label>E-mail:</label>
+                        <input type="email" name="email">
+
+                        <label>CPF:</label>
+                        <input type="text" name="cpf" pattern="[0-9]{11}" title="Favor verificar o CPF digitado">
+                    </div>
+                    <div class="genero">
+                        <input type="radio" name="masculino" value="masculino">
+                        <label>Masculino</label>
+
+                        <input type="radio" name="feminino" value="feminino">
+                        <label>Feminino</label>
+                    </div>
+
+                    <button>Enviar</button>
+
+
+                    
+
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="lista_Produtos">
+        <hr>
+        <h4>Sua seleção especial</h4>
+        <div class="produtos"></div>
+        <button class="botao" id="botao"><a id="proximo_Produto" href="">Ainda mais produtos aqui!</a></button>
+    </div>
+
+    <div class="compartilhar">
+        <h4>Compartilhe a novidade</h4>
+        <p>Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!</p>
+       
+        <form class="dados_Amigo" id="dados_Amigo">
+            <div class="caixa">
+                <div>
+                    <label>Name do seu amigo</label>
+                    <input type="text" name="nome_Amigo">
+                </div>
+                <div>
+                    <label> E-mail:</label>
+                    <input type="email" name="email_Amigo">
+
+                </div>
+
+            </div>
+
+            <button type="envio">Enviar agora</button>
+
+        </form>
+    </div>
+
+    <footer class="rodape">
+
+        <p>Testando suas habilidades em HTML, CSS e JS.</p>
+        <p>Linx Impulse</p>
+        <p>2019</p>
+    </footer>
+
+
+    <script src="main"></script>
+</body>
+</html>
