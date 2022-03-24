@@ -1,0 +1,424 @@
+:root {
+    --color-primary:#4366b3;
+    --color-secundary:hsl(229, 88%, 30%);
+    --color-third:#ffffff;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+
+/*****************
+*   HEADER
+******************/
+
+.header {
+    height: 350px;
+}
+
+.header .fundo {
+    background-color: var(--color-primary);
+    height: 350px;
+    width: 100vw;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 0% 60%);
+    position: absolute;
+}
+
+.header .titulo {
+    background-color: transparent;
+    z-index: 1;
+    position: relative;
+}
+
+.header .titulo h1 {
+    font-size: 35px;
+    margin-bottom: 25px;
+    color: var(--color-third);
+    text-align: center;
+}
+
+.header .titulo h3 {
+    font-weight: 250;
+    font-size: 20px;
+    padding-top: 55px;
+    color: var(--color-third);
+    text-align: center;
+
+}
+
+.header .titulo p {
+color: var(--color-third);
+text-align: center;
+font-size: 15px;
+
+}
+
+.header .botoes {
+    background-color: transparent;
+    z-index: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.header .botoes button{
+    width: 150px;
+    height: 50px;
+    margin: 20px;
+    background-color: var(--color-third);
+    color: hsl(217, 81%, 61%);
+    border:1px solid var(--color-primary);
+    border-radius: 5px;
+    font-size: 15px;
+    box-shadow: 1px 1px 7px rgb(3, 17, 78) ;
+}
+
+.header .botoes button a {
+    text-decoration: none;
+    color: var(--color-secundary);
+}
+
+
+/**********************
+*        ABOUT
+***********************/
+
+.container {
+    color: var(--color-secundary);
+    width: 60%;
+    margin: 0 auto;
+}
+
+.container .formularioInicial {
+    display: flex;
+}
+
+.container .formularioInicial label {
+    font-size: 13px;
+}
+
+.container .formularioInicial .texto {
+    width: 60%;
+    margin-right: 60px;
+}
+
+.container .formularioInicial .texto h2 {
+    font-weight: 400;
+    font-size: 20px;
+    margin: 25px 0;
+}
+
+.container .formularioInicial .texto p {
+    font-size: 12px;
+    text-align: left;
+    margin: 20px 0;
+    
+}
+
+.container .formularioInicial .entrada {
+    width: 40%;
+    margin-top: 20px;
+}
+
+.container .formularioInicial .entrada .dados-Pessoais input {
+    height: 30px;
+    width: 150%;
+    margin: 5px 0 15px 0;
+}
+
+.container .formularioInicial .entrada .dados-Pessoais .inputErro {
+    border: 1px solid red;
+}
+
+.container .formularioInicial .entrada .genero input {
+    margin-right: 30px;
+}
+
+.container .formularioInicial .entrada .genero .inputErro {
+    border: 1px solid red;
+}
+
+.container .formularioInicial button {
+    width: 100%;
+    height: 35px;
+    background-color: #2857adf6;
+    color: var(--color-third);
+    border: 1px solid var(--color-primary);
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+/***************
+*   PRODUTOS
+****************/
+
+.container .lista-Produtos {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container .lista-Produtos hr {
+    border: 2px solid var(--color-secundary);
+    margin: 70px auto 50px auto;
+    padding: 0 50%;
+}
+
+.container .lista-Produtos h4 {
+    position: relative;
+    top: -60px;
+    width: 210px;
+    text-align: center;
+    background-color: var(--color-third);
+}
+
+.container .lista-Produtos .produtos {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 35px;
+    width: 100vw;
+    justify-content: center;
+}
+
+.container .lista-Produtos .produtos .mais-produtos {
+    width: 200px;
+    height: 400px;
+}
+
+.container .lista-Produtos .produtos .produtos img {
+    width: 100%;
+    height: 150px;
+}
+
+.container .lista-Produtos .produtos .produtos h6 {
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 8px;
+}
+
+.container .lista-Produtos .produtos .produtos p, 
+.container .lista-Produtos .produtos .produtos span {
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+.container .lista-Produtos .produtos .produtos h5 {
+    font-size: 16px;
+    margin-top: 8px;
+}
+
+.container .lista-Produtos .produtos .produtos button {
+    margin-top: 8px;
+    width: 100%;
+    height: 30px;
+    color: var(--color-secundary);
+    background-color: var(--color-third);
+    border: 1px solid var(--color-primary);
+    border-radius: 4px;
+}
+
+.container .lista-Produtos .botao {
+    margin-top: 52px;
+    width: 250px;
+    height: 39px;
+    color: var(--color-secundary);
+    background-color: #2857adf6;
+    border: 1px solid var(--color-primary);
+    border-radius: 4px;
+}
+
+.container .lista-Produtos .botao a {
+    text-decoration:none;
+    color: var(--color-third);
+    padding: 10px 10px;
+}
+
+/**********************
+*    COMPARTILHAR
+***********************/
+
+.container .compartilhar {
+    text-align: center;
+}
+
+.container .compartilhar hr {
+    border: 1px solid var(--color-secundary);
+    margin: 75px auto 50px auto;
+    padding: 0 50%;
+}
+
+.container .compartilhar h4 {
+    position: relative;
+    text-align: center;
+    top: -60px;
+    margin: 0 auto;
+    width: 220px;
+    background-color: var(--color-third);
+}
+
+.container .compartilhar p {
+    font-size: 14px;
+}
+
+.container .compartilhar .dados-Amigo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    margin-top: 25px;
+}
+
+.container .compartilhar .dados-Amigo .encapisular {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    width: 100%;
+    gap: 25px;
+    justify-content: center;
+}
+
+.container .compartilhar .dados-Amigo .encapisular .nome,
+.container .compartilhar .dados-Amigo .encapisular .email {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container .compartilhar .dados-Amigo .encapisular .nome 
+.container .compartilhar .dados-Amigo .encapisular .email  {
+    width: 100%;
+    height: 30px;
+    margin-top: 15px; 
+}
+
+.container .compartilhar input {
+    font-size: 15px;
+}
+
+.container .compartilhar .dados-Amigo input .inputErro {
+    border: 1px solid red;
+}
+
+ .container .compartilhar .dados-Amigo button {
+    margin-top: 52px;
+    width: 260px;
+    height: 39px;
+    color: var(--color-secundary);
+    background-color: var(--color-third);
+    border: 1px solid var(--color-primary);
+    border-radius: 4px;
+}
+
+/********************
+*        RODAPÉ
+**********************/
+
+.rodape {
+    background-color: var(--color-primary);
+    height: 350px;
+    width: 100vw;
+    clip-path: polygon(0% 50%, 100% 20%, 100% 100%, 0% 100%);
+    color: var(--color-third);
+    text-align: center;
+}
+
+.rodape p {
+    position: relative;
+    top:60%;
+}
+
+/********************
+ *     MOBILE
+ ********************/ 
+@media (min-width: 360px) and (max-width: 640px) {
+        .container .lista-Produtos .produtos {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media (max-width: 360px) {
+
+    /*****************
+    *   HEADER
+    ******************/ 
+
+    .header .title h1,
+    .header .title h3, 
+    .header .title p {
+    text-align: left;
+    padding-left: 20px;
+    width: 90vw;
+    }
+
+    .header .botoes {
+        flex-wrap: wrap;
+    }
+
+    /**********************
+    *        ABOUT
+    ***********************/
+
+    .container {
+        width: 100%;
+        padding: 0 22px;
+        margin: auto;
+    }
+
+    .container .formulario {
+        display: flex;
+        flex-wrap:wrap;
+    }
+
+    .container .form .texto {
+        margin-right: 0;
+    }
+    .container .formulario .texto {
+        width: 100%;
+    }
+
+    .container .formulario .entrada {
+        width: 100%;
+
+    }
+
+    /**********************
+    *     LISTA-PRODUTOS
+    ***********************/
+    .container .lista-Produtos .produtos {
+        grid-template-columns: auto;
+        align-items: center;
+    }
+    .container .lista-Produtos .produtos .produtos{
+        display: grid;
+        grid-template-columns: 170px 170px;
+        gap: 15px;
+        height: 150px;
+        width: 100%;
+        justify-content: center;
+        
+    }
+
+    .container .lista-Produtos .produtos .produtos{
+        display: none;
+    }
+
+     /**********************
+    *     COMPARTILHAR
+    ***********************/
+
+    .container .compartilhar .dados-Amigo .encapisular {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .container .dados-Amigo label {
+        margin-top: 0;
+    }
+}
+
