@@ -28,7 +28,7 @@
     </header>
 
     <div class="container">
-        <div class="formulario">
+        <div class="formularioInicial">
             <div class="texto">
                 <h2>Ajude o algorítimo a ser mais certeiro</h2>
                 <p>
@@ -43,8 +43,8 @@
               
             <div class="entrada">
 
-                <form class="formulario_Inicial">
-                    <div class="dados_Pessoais">
+                <form id="formulario">
+                    <div class="dados-Pessoais">
                         <label>Seu nome:</label>
                         <input type="text" name="nome">
 
@@ -55,10 +55,10 @@
                         <input type="text" name="cpf" pattern="[0-9]{11}" title="Favor verificar o CPF digitado">
                     </div>
                     <div class="genero">
-                        <input type="radio" name="masculino" value="masculino">
+                        <input type="radio" name="sexo" value="masculino">
                         <label>Masculino</label>
 
-                        <input type="radio" name="feminino" value="feminino">
+                        <input type="radio" name="sexo" value="feminino">
                         <label>Feminino</label>
                     </div>
 
@@ -71,39 +71,40 @@
             </div>
         </div>
 
-    </div>
+    
 
 
-    <div class="lista_Produtos">
-        <hr>
-        <h4>Sua seleção especial</h4>
-        <div class="produtos"></div>
-        <button class="botao" id="botao"><a id="proximo_Produto" href="">Ainda mais produtos aqui!</a></button>
-    </div>
+        <div class="lista-Produtos">
+            <hr>
+            <h4>Sua seleção especial</h4>
+            <div class="produtos"></div>
+            <button class="botao" id="botao"><a id="proximoProduto" href="">Ainda mais produtos aqui!</a></button>
+        </div>
 
-    <div class="compartilhar">
-        <h4>Compartilhe a novidade</h4>
-        <p>Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!</p>
-       
-        <form class="dados_Amigo" id="dados_Amigo">
-            <div class="caixa">
-                <div>
-                    <label>Name do seu amigo</label>
-                    <input type="text" name="nome_Amigo">
+        <div class="compartilhar">
+            <hr>
+            <h4>Compartilhe a novidade</h4>
+            <p>Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!</p>
+        
+            <form class="dadosAmigo" id="dadosAmigo">
+                <div class="encapisular">
+                    <div class="nome">
+                        <label>Nome do seu amigo</label>
+                        <input type="text" name="nomeAmigo">
+                    </div>
+                    <div class="email">
+                        <label> E-mail:</label>
+                        <input type="email" name="emailAmigo">
+
+                    </div>
+
                 </div>
-                <div>
-                    <label> E-mail:</label>
-                    <input type="email" name="email_Amigo">
 
-                </div>
+                <button id="contatoAmigo" type="submit">Enviar agora</button>
 
-            </div>
-
-            <button type="envio">Enviar agora</button>
-
-        </form>
+            </form>
+        </div>
     </div>
-
     <footer class="rodape">
 
         <p>Testando suas habilidades em HTML, CSS e JS.</p>
@@ -112,6 +113,6 @@
     </footer>
 
 
-    <script src="main"></script>
+    <script src="main.js"></script>
 </body>
 </html>
