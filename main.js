@@ -99,16 +99,16 @@ function listaProduto(data) {
             `
                 <div class="product">
                     <div>
-                        <img src=${product.image}>
+                        <img src=https:${product.image}>
                     </div>
                     <div>
-                        <h6>${product.name}<h6/>
-                        <p>${product.description}<p/>
+                        <h6>${product.name}</h6>
+                        <p>${product.description}</p>
                         <span>De R$ ${product.oldPrice}<span>
-                        <h5>Por R$ ${product.price}<h5/>
+                        <h5>Por R$ ${product.price}</h5>
                         <span>ou: ${product.installments.count}x de R$ ${product.installments.value}<span/>
-                        <button>Comprar<button/>
-                    <div/>
+                        <button>Comprar</button>
+                    </div>
                  </div>
             `)
 
